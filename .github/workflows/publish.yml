@@ -23,7 +23,7 @@ jobs:
           registry-url: 'https://registry.npmjs.org'  # Реестр npm
 
       # Шаг 3: Публикуем пакет
-      - run: npm publish
+      - run: npm publish --access public --otp=""
         env:
           # Токен для аутентификации в npm
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
