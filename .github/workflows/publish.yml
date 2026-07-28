@@ -1,0 +1,29 @@
+# Название workflow (отображается в GitHub Actions)
+name: Publish
+
+# Триггеры запуска
+on:
+  push:
+    branches:
+      - main  # Запускается при пуше в ветку main
+
+# Задачи (jobs)
+jobs:
+  publish:  # Задача публикации
+    runs-on: ubuntu-latest  # Используем последнюю версию Ubuntu
+
+    steps:
+      # Шаг 1: Клонируем репозиторий
+      - uses: actions/checkout@v4
+
+      # Шаг 2: Устанавливаем Node.js
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20           # Версия Node.js
+          registry-url: 'https://registry.npmjs.org'  # Реестр npm
+
+      # Шаг 3: Публикуем пакет
+      - run: npm publish
+        env:
+          # Токен для аутентификации в npm
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
