@@ -1,0 +1,18 @@
+# Папки
+.github/
+node_modules/
+.vscode/
+.idea/
+
+# Файлы логов
+*.log
+
+# Lock-файлы
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+npm-lock.yaml
+
+# Системные файлы
+.DS_Store
+Thumbs.db
