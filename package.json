@@ -1,0 +1,23 @@
+{
+  "name": "@cinema/core",
+  "version": "1.0.0",
+  "description": "Core lib",
+  "type": "commonjs",
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "ISC",
+  "author": {
+    "name": "Denis",
+    "email": "dskudilo@gmail.com"
+  },
+  "peerDependencies": {
+    "prettier": "^3.0.0"
+  },
+  "dependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^5.2.2"
+  },
+  "exports": {
+    "prettier": "./src/prettier.config.mjs"
+  }
+}

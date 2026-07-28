@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+dist/
+build/
+
+# Lock files
+pnpm-lock.yaml
+
+# Environment variables
+.env
+
+# OS files
+.DS_Store
+
+# IDE
+.vscode/
+
+# Logs
+*.log
