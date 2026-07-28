@@ -1,6 +1,6 @@
 {
   "name": "@cinema-test/core",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Core lib",
   "type": "commonjs",
   "publishConfig": {
