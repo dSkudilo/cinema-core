@@ -1,5 +1,5 @@
 {
-  "name": "@cinema/core",
+  "name": "@cinema-test/core",
   "version": "1.0.0",
   "description": "Core lib",
   "type": "commonjs",
