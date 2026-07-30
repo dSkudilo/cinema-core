@@ -5,7 +5,7 @@ export default {
   semi: false,
   singleQuote: true,
   jsxSingleQuote: true,
-  arrowParents: "avoid",
+  arrowParens: "avoid",
   importOrderSeparation: true,
   importOrderSortSpecifiers: true,
   importOrderCaseInsensitive: true,
@@ -17,8 +17,8 @@ export default {
   importOrder: [
     "<THIRD_PARTY_MODULES>",
     "^@/(.*)$",
-    "^../(.*)$",
-    "^./(.*)$",
+    "^../(.*)",
+    "^./(.*)",
   ],
   plugins: ["@trivago/prettier-plugin-sort-imports"]
 }
